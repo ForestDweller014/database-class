@@ -9,7 +9,7 @@ public static class DBClass {
 	
     public static void Conn() {
         try {
-            connection = new MySqlConnection("SERVER=127.0.0.1;PORT=3306;DATABASE=userdata;UID=root;PWD=supersecret123;SslMode=none;");
+            connection = new MySqlConnection("SERVER=127.0.0.1;PORT=3306;DATABASE=dbname;UID=username;PWD=password;SslMode=none;");
 	    connection.Open();
 	} catch(SqlException e) {
 	    Console.WriteLine("Error at Conn(): " + e.StackTrace + ". Reason: " + e.Message);
