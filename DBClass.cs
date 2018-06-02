@@ -2,7 +2,7 @@ using System;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
-public static class DBManager {
+public static class DBClass {
     public static MySqlConnection connection;
     public static MySqlCommand command;
     public static MySqlDataReader reader;
